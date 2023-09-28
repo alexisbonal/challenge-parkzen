@@ -5101,6 +5101,11 @@ packages:
     engines: {node: '>= 0.4.0'}
     dev: false
 
+  /uuid/9.0.1:
+    resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
+    hasBin: true
+    dev: false
+
   /v8-compile-cache-lib/3.0.1:
     resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
     dev: false
@@ -5297,7 +5302,7 @@ packages:
     dev: false
 
   file:projects/api.tgz:
-    resolution: {integrity: sha512-EEs4Ny+eIsU4lmCchbG3Fob6kraHnysv1qIPValAedWtwS87xjD/GxG2MHWCVEPrqD9QyWKBKjLjvtlyOkTBDw==, tarball: file:projects/api.tgz}
+    resolution: {integrity: sha512-FCPrS6Z+/1rG33R6YniOxFRQny8A4ap+pxjCYx16msEZJr3PXtWQH6Xg+XlC9s1IoW6f3Kkk34/MW5f8qGEpsg==, tarball: file:projects/api.tgz}
     name: '@rush-temp/api'
     version: 0.0.0
     dependencies:
@@ -5327,6 +5332,7 @@ packages:
       ts-node: 10.9.1_15c457d9fe0e2fa16d0717a5c28706bd
       tsconfig-paths: 4.2.0
       typescript: 5.2.2
+      uuid: 9.0.1
     transitivePeerDependencies:
       - '@babel/core'
       - '@jest/types'

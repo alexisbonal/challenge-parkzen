@@ -1,11 +1,14 @@
-import { Controller, Get } from '@nestjs/common';
+import { Body, Controller, HttpStatus, Post } from '@nestjs/common';
+import { CreateParkDTO } from './dto/CreatePark.dto';
+import { CreateParkSlot } from './services/CreateParkSlot.service';
 
 @Controller()
 export class AppController {
-  constructor() {}
+  constructor(private readonly createParkSlot: CreateParkSlot) {}
 
-  @Get()
-  getHello(): string {
-    return 'hello !!!';
+  @Post('/parks')
+  createPark(@Body() body: CreateParkDTO) {
+    this.createParkSlot.handle(body);
+    return HttpStatus.NO_CONTENT;
   }
 }
